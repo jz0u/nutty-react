@@ -17,7 +17,7 @@
 #36454F - charcoal grey
 */
 body {
-    background-color: #b5b3b0;
+    background-color: #ffffff;
     margin: 0px;
 }
 
@@ -57,5 +57,54 @@ header nav button {
 #hero-section{
     background-color: #ddc09d;
     border: solid 1px #36454F;
+
+}
+
+/* Features.jsx */
+#features-section{
+    display: flex;
+    justify-content: center;
+}
+#features-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3caab;
+    border: solid 1px #36454F;
+    height:500px;
+    width: 500px;
+    border-radius: 20px;
+
+
+}
+
+
+
+/* Feature.jsx */
+.feature-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border: solid 1px #36454F;
+    border-radius: 20px;
+    
+
+}
+.feature-component > img{
+    border: solid 1px #36454F;
+    height: auto;
+    width: 60%;
+    border-radius: 10px;
+}
+
+/**/
+
+.off{
+    display: none;
+}
+.on{
 
 }
