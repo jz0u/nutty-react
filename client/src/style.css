@@ -1,31 +1,53 @@
+/*
+#efdcc3 - Creamy Linen: A very light, soft beige.
+#f7dcba - Toasted Almond: A slightly warmer, pale tan.
+#eeddc3 - Buttered Oats: A light, creamy off-white with a hint of yellow.
+#e9d0af - Nutty Shell: A pale, sandy brown.
+#e3caab - Golden Crumb: A warm, light-to-mid brown.
+#ddc09d - Sun-dried Earth: A classic, soft brown.
+#d8b887 - Roasted Chestnut: A mid-range, rich brown.
+#bf9674 - Deep Umber: A dark, reddish-brown.
+#d9ac73 - Caramelized Amber: A rich, golden-brown.
+#d3a05f - Cocoa Dust: A deeper, more muted brown.
+#ce954b - Burnt Ginger: A dark, spicy orange-brown.
+--complementary--
+#87d9de - skippy blue
+--grey--
+#b5b3b0 - grey shade of cream
+#36454F - charcoal grey
+*/
 body {
-    background-color: white;
+    background-color: #b5b3b0;
     margin: 0px;
 }
 
 /* Header.jsx */
 header {
-    background-color: burlywood;
-    border: solid 1px black;
+    background-color: #d8b887;
+    border: solid 1px #36454F;
     display: flex;
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-header .logo{
+
+header .logo {
     display: flex;
     align-items: center;
 }
-header .logo img{
+
+header .logo img {
     height: 50px;
     width: auto;
 }
-header nav{
+
+header nav {
     display: flex;
     gap: 10px;
 }
-header nav button{
+
+header nav button {
     border-radius: 6px;
     border: 1px solid black;
 }
