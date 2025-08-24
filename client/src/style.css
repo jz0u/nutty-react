@@ -1,3 +1,16 @@
-body{
-    background-color: grey;
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+/* Header.jsx */
+header {
+    background-color: burlywood;
+    border: solid 1px black;
+    display: flex;
+    height: 80px;
+    
+}
+header > img {
+    height: auto;
 }

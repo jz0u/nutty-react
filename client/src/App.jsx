@@ -1,5 +1,8 @@
+import Header from "./components/Header"
 export default function App(){
   return(
-    <h3>Hello</h3>
+    <>
+      <Header />
+    </>
   )
 }
