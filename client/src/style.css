@@ -9,8 +9,23 @@ header {
     border: solid 1px black;
     display: flex;
     height: 80px;
+    justify-content: space-between;
+    align-items: center;
     
 }
-header > img {
-    height: auto;
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    height: 50px;
+    width: auto;
+}
+header nav{
+    display: flex;
+    gap: 10px;
+}
+header nav button{
+    border-radius: 6px;
+    border: 1px solid black;
 }

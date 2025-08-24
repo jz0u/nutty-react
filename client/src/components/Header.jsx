@@ -1,13 +1,11 @@
-import peanutButterIcon from "../assets/peanutButterIcon.jpg"
+import Logo from "./Logo"
+import Nav from "./Nav"
 export default function Header() {
+    
     return (
         <header>
-            <img src={peanutButterIcon}></img>
-            <h1>Nutty</h1>
-            <nav>
-                <button>Login</button>
-                <button>Signup</button>
-            </nav>
+            <Logo/>
+            <Nav/>
         </header>
     )
 }
