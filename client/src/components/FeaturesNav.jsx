@@ -1,6 +1,5 @@
 export default function FeaturesNav({features,onChange}){
 
-
     const mapping = features.map(feature=>
         <input 
             type="radio"
@@ -12,8 +11,6 @@ export default function FeaturesNav({features,onChange}){
             
         />
     )
-
-
 
     return(
         <form id="features-nav">

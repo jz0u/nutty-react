@@ -65,28 +65,36 @@ header nav button {
     display: flex;
     justify-content: center;
 }
-#features-display{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #e3caab;
-    border: solid 1px #36454F;
-    height:500px;
-    width: 500px;
-    border-radius: 20px;
 
 
+/* FeatureDisplay.jsx */
+#features-display-header{
+    background-color: #87d9de;
+}
+#features-display-header > h1{
+    color: #ffffff;
 }
 
 
 
+
 /* Feature.jsx */
-.feature-component{
+#features-display{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;
+    background-color: #e3caab;
+    border: solid 1px #36454F;
+    height: auto;
+
+
+}
+.feature-component{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     width: 80%;
     border: solid 1px #36454F;
     border-radius: 20px;
@@ -104,7 +112,4 @@ header nav button {
 
 .off{
     display: none;
-}
-.on{
-
 }

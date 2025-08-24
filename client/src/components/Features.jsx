@@ -1,19 +1,17 @@
 import Feature from "./Feature"
 import FeatureList from "./FeatureList"
 import { useState } from "react"
-import FeaturesNav from "./FeaturesNav"
 import { useEffect } from "react"
+import FeatureDisplay from "./FeatureDisplay"
 export default function Features() {
 
-    
+
 
     const [features, setFeature] = useState(FeatureList)
 
     function handleDisplayedFeature(id) {
         setFeature(prev => prev.map(x =>
-
             (id === x.id ? { ...x, off: false } : { ...x, off: true })
-
         ))
     }
 
@@ -23,29 +21,22 @@ export default function Features() {
             fName={feature.fName}
             fDesc={feature.fDesc}
             fImg={feature.fImg}
-            off={(feature.off) ? "off" : "on"}
+            off={(feature.off) ? "off" : undefined}
         />
     )
     /* dev */
-     useEffect(() => {
-        console.log(features)
+    useEffect(() => {
+        console.log()
     });
 
     return (
         <section id="features-section">
 
-            <div id="features-display">
-                <header>
-                    <h1>Current Features:</h1>
-                </header>
-                {featuresMapping}
-                <footer>
-                    <FeaturesNav
-                        features={features}
-                        onChange={handleDisplayedFeature}
-                    />
-                </footer>
-            </div>
+            <FeatureDisplay
+                featuresMapping={featuresMapping}
+                features={features}
+                onChange={handleDisplayedFeature}
+            />
 
         </section>
 
