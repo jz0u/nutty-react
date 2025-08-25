@@ -5,11 +5,13 @@ import Footer from "../components/Footer";
 
 export default function LandingPage(){
     return(
-        <>
+        <div id="landingPage">
             <Header/>
-            <Hero/>
-            <Features/>
+            <main style={{ flex: 1 }} id="landingpage-main">
+                <Hero/>
+                <Features/>
+            </main>
             <Footer/>
-        </>
+        </div>
     )
 }

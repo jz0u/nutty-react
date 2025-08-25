@@ -7,10 +7,11 @@ export default function FeatureDisplay({featuresMapping,features,onChange}){
                 <header id="features-display-header">
                     <h1>Current Features:</h1>
                 </header>
-                
+                <div id="features-display-body">
                     {featuresMapping}
+                </div>
                 
-                <footer>
+                <footer id="features-display-footer">
                     <FeaturesNav
                         features={features}
                         onChange={onChange}
