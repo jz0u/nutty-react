@@ -3,6 +3,7 @@ import FeatureList from "./FeatureList"
 import { useState } from "react"
 import { useEffect } from "react"
 import FeatureDisplay from "./FeatureDisplay"
+import "../../../styles/Feature.css"
 export default function Features() {
 
 
@@ -21,7 +22,7 @@ export default function Features() {
             fName={feature.fName}
             fDesc={feature.fDesc}
             fImg={feature.fImg}
-            off={(feature.off) ? "off" : undefined}
+            off={(feature.off) ? "off" : "on"}
         />
     )
     /* dev */
@@ -30,7 +31,7 @@ export default function Features() {
     });
 
     return (
-        <section id="features-section">
+        <section id="FeatureSectionController">
 
             <FeatureDisplay
                 featuresMapping={featuresMapping}

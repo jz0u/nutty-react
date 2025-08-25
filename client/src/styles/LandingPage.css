@@ -1,0 +1,18 @@
+/* LandingPage.jsx */
+#LandingPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*landing page main*/
+#HeroAndFeatureSectionController {
+    background-image: url("../assets/toastPB.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex:1;
+}
+
+
+

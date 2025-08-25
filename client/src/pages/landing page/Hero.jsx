@@ -1,17 +1,18 @@
+import "../../styles/Hero.css"
 export default function Hero() {
 
     const headline = "Track food, hit goals, feel better."
     const subheading = "Log meals in seconds and stay on track."
     const callToAction = () => (console.log("redirect to signup"))
     return (
-        <section id="hero-section">
-            <div id="hero-text">
-                <h1>{headline}</h1>
-                <h3>{subheading}</h3>
+        <main id="HeroComponent">
+            <div id="HeroText">
+                <h1 id="headline">{headline}</h1>
+                <h3 id="subtext"> {subheading}</h3>
             </div>
-            <div id="hero-btn-div">
-                <button id="hero-btn"onClick={callToAction}>Get started!</button>
+            <div id="HeroCTA">
+                <button id="HeroButton"onClick={callToAction}>Get started!</button>
             </div>
-        </section>
+        </main>
     )
 }

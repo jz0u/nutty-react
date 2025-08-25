@@ -3,15 +3,16 @@ import FeaturesNav from "./FeaturesNav"
 export default function FeatureDisplay({featuresMapping,features,onChange}){
 
     return(
-        <div id="features-display">
-                <header id="features-display-header">
-                    <h1>Current Features:</h1>
+        <div id="FeatureDisplay">
+                <header id="FeatureDisplayHeader">
+                    <h2>Current Features:</h2>
                 </header>
-                <div id="features-display-body">
+
+                <div id="FeatureDisplayContentBox">
                     {featuresMapping}
                 </div>
                 
-                <footer id="features-display-footer">
+                <footer id="FeatureDisplayFooter">
                     <FeaturesNav
                         features={features}
                         onChange={onChange}

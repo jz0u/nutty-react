@@ -1,26 +1,42 @@
 #Header{
+
     background-color: #f7dcba;
     display: flex;
     height: 60px;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 25px 5px rgba(228, 158, 57, 0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.06); 
+
      /* Ensure shadow isn’t overlapped by following elements */
     position: relative;
-    z-index: 1;
-
+    z-index: 10;
+    padding: 0px 20px;
 }
 #HeaderNav{
     display: flex;
     gap: 10px;
-    margin-right: 10px;
 }
 
 #HeaderNav > button {
-    border-radius: 20px;
-    border: none;
-    padding: 5px 15px;
-    background-color: #36454F;
-    color: #87d9de;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  background-color: #36454F; 
+  color: #87d9de;            
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .06s ease, box-shadow .2s ease;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.12);
 }
 
+#HeaderNav > button:hover {
+  background-color: #2f3d45;        /* a hair lighter for feedback */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+#HeaderNav > button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.18);
+}

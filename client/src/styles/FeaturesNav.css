@@ -1,0 +1,41 @@
+#FeaturesNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* hide browser default */
+.feature-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);    /* neutral dot */
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+}
+
+/* hover feedback */
+.feature-radio:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.15);
+}
+
+/* checked (active) state */
+.feature-radio:checked {
+  background: #2a7a78;                      /* teal accent */
+  border-color: #2a7a78;
+  box-shadow: 0 0 8px rgba(50, 205, 190, 0.7);
+}
+
+/* keyboard focus ring */
+.feature-radio:focus-visible {
+  outline: 2px solid #329d9c;
+  outline-offset: 2px;
+}

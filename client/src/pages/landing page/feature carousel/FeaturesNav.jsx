@@ -1,3 +1,4 @@
+import "../../../styles/FeaturesNav.css"
 export default function FeaturesNav({features,onChange}){
 
     const mapping = features.map(feature=>
@@ -6,15 +7,19 @@ export default function FeaturesNav({features,onChange}){
             key={feature.id}
             id={feature.id}
             name="features-nav"
+            className="feature-radio"
             value={feature.id}
             onChange={()=>onChange(feature.id)}
-            
+            defaultChecked={feature.id === 0}
         />
     )
 
     return(
-        <form id="features-nav">
-            {mapping}
-        </form>
+        <div id="FeaturesNav">
+            <form>
+                {mapping}
+            </form>
+        </div>
+        
     )
 }

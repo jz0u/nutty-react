@@ -2,16 +2,16 @@ import FeatureSectionController from "./feature carousel/FeatureSectionControlle
 import Header from "../../components/Header";
 import Hero from "./Hero"
 import Footer from "../../components/Footer";
-
+import "../../styles/LandingPage.css"
 export default function LandingPage(){
     return(
-        <div id="landingPage">
+        <main id="LandingPage">
             <Header/>
-            <main style={{ flex: 1 }} id="landingpage-main">
+            <div id="HeroAndFeatureSectionController">
                 <Hero/>
                 <FeatureSectionController/>
-            </main>
+            </div>
             <Footer/>
-        </div>
+        </main>
     )
 }
