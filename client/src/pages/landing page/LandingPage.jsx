@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Hero from "./Hero"
 import Footer from "../../components/Footer";
 import "../../styles/LandingPage.css"
+
 export default function LandingPage(){
     return(
         <main id="LandingPage">
