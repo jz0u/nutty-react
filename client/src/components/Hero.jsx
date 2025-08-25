@@ -9,9 +9,8 @@ export default function Hero() {
                 <h1>{headline}</h1>
                 <h3>{subheading}</h3>
             </div>
-            <div id="hero-btn">
-                <button onClick={callToAction}>Get started!</button>
-
+            <div id="hero-btn-div">
+                <button id="hero-btn"onClick={callToAction}>Get started!</button>
             </div>
         </section>
     )
