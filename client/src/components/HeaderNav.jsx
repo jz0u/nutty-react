@@ -1,6 +1,6 @@
-export default function Nav() {
+export default function HeaderNav() {
     return (
-        <nav id="header-nav">
+        <nav id="HeaderNav">
             <button>Login</button>
             <button>Signup</button>
         </nav>

@@ -32,45 +32,12 @@ body {
 
 /* LandingPage.jsx */
 #landingPage {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Header.jsx */
-header {
-    background-color: #e9d0af;
-    border-bottom: solid 2px #F1C40F;
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
 
-}
-#header-nav{
-    display: flex;
-    gap: 10px;
-    margin-right: 10px;
-}
-#header-nav > button {
-    border-radius: 20px;
-    border: none;
-    padding: 5px 15px;
-    background-color: #36454F;
-    color: #87d9de;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-
-}
-
-header .logo img {
-    height: 50px;
-    width: auto;
-}
 
 /*landing page main*/
 #landingpage-main {
@@ -177,22 +144,7 @@ header .logo img {
     margin: 10px 0px;
 }
 
-/* Footer.jsx*/
 
-#footer {
-    background-color: #d8b887;
-    margin-bottom: 0px;
-    border-top: solid 2px #F1C40F;
-    height: 60px;
-    display: flex;
-    align-items: center;
-
-}
-
-#footer>p {
-    margin: 0px;
-    padding: 5px 20px;
-}
 
 .off {
     display: none;

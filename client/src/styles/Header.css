@@ -1,0 +1,26 @@
+#Header{
+    background-color: #f7dcba;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 25px 5px rgba(228, 158, 57, 0.4);
+     /* Ensure shadow isn’t overlapped by following elements */
+    position: relative;
+    z-index: 1;
+
+}
+#HeaderNav{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#HeaderNav > button {
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px;
+    background-color: #36454F;
+    color: #87d9de;
+}
+

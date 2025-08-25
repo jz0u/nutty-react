@@ -1,4 +1,4 @@
-import tempImage from "../assets/tempImage.png"
+import tempImage from "../../../assets/tempImage.png"
 
 export default [
     { id: 0, fName: "Quick Logging", fDesc: "Search foods or scan barcodes to add meals instantly", fImg: tempImage, off: false },

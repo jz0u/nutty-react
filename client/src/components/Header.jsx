@@ -1,11 +1,12 @@
 import Logo from "./Logo"
-import Nav from "./Nav"
+import "../styles/Header.css"
+import HeaderNav from "./HeaderNav"
 export default function Header() {
     
     return (
-        <header>
+        <header id="Header">
             <Logo/>
-            <Nav/>
+            <HeaderNav/>
         </header>
     )
 }
