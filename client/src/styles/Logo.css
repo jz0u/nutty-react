@@ -1,9 +1,18 @@
 #Logo {
-    display: flex;
-    align-items: center;
+
 }
 
-#Logo > img {
+#Logo-container > button > img {
     height: 50px;
-    width: auto;
+    width: auto;    
+}
+
+
+#Logo-button{
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 30px;
+    border: none;
 }

@@ -1,9 +1,9 @@
 import "../../styles/Hero.css"
-export default function Hero() {
+import { useNavigate } from "react-router-dom"
+export default function Hero({headline,subheading}) {
+    const navigate = useNavigate()
 
-    const headline = "Track food, hit goals, feel better."
-    const subheading = "Log meals in seconds and stay on track."
-    const callToAction = () => (console.log("redirect to signup"))
+    const callToAction = () => {navigate("/signup")}
     return (
         <main id="HeroComponent">
             <div id="HeroText">

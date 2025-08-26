@@ -4,15 +4,23 @@ import Hero from "./Hero"
 import Footer from "../../components/Footer";
 import "../../styles/LandingPage.css"
 
-export default function LandingPage(){
-    return(
+export default function LandingPage() {
+    const headline = "Track food, hit goals, feel better."
+    const subheading = "Log meals in seconds and stay on track."
+
+
+    return (
         <main id="LandingPage">
-            <Header/>
+            <Header />
             <div id="HeroAndFeatureSectionController">
-                <Hero/>
-                <FeatureSectionController/>
+                <Hero
+                    headline={headline}
+                    subheading={subheading }
+
+                />
+                <FeatureSectionController />
             </div>
-            <Footer/>
+            <Footer />
         </main>
     )
 }
