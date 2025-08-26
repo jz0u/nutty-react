@@ -11,52 +11,6 @@
     flex: 1;
 }
 
-.label,
-button.label {
-    display: flex;
-    background-color: #f7dcba;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 400px;
-    border-radius: 38px;
-    box-shadow: 0 4px 20px rgba(26, 25, 25, 0.6);
-    border: none;
-
-}
-
-.input-field {
-    text-align: center;
-    font-size: 180%;
-    font-weight: 600;
-    font-family: "Source Code Pro", monospace;
-    background-color: #000000;
-    color: #87d9de;
-    height: 20px;
-    width: 175px;
-    padding: 20px 10px;
-    border: none;
-    border-radius: 0px 20px 20px 0px;
-}
-
-.label>h1 {
-
-    background-color: #c68e58;
-    color: black;
-    min-width: fit-content;
-    width: 175px;
-    border-radius: 20px 0px 0px 20px;
-    padding-left: 10px;
-    text-align: center;
-}
-
-button.label>h1 {
-    border-radius: 20px;
-    padding: 0px 5px;
-    width: 97%;
-    background-color: inherit;
-}
-
 
 
 #signup-form {
@@ -74,43 +28,3 @@ button.label>h1 {
 
 }
 
-button.label {
-    background-color: #2a7a78;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(50, 205, 190, 0.6);
-    /* teal glow */
-    transition: all 0.25s ease;
-}
-
-/* Hover effect */
-button.label:hover {
-    background-color: #329d9c;
-    /* lighter teal on hover */
-    transform: translateY(-2px);
-    /* slight lift */
-    box-shadow: 0 4px 25px rgba(50, 205, 190, 0.8);
-
-    /* stronger teal glow */
-}
-
-.label:hover {
-    background-color: #c68e58;
-    box-shadow: 0 4px 20px rgba(26, 25, 25, 0.6);
-    transition: all 0.25s ease;
-    transform: translateY(-2px);
-
-}
-
-.label:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 20px rgba(26, 25, 25, 0.6);
-
-}
-
-/* Active (on click) */
-button.label:active {
-    transform: translateY(0);
-    /* press down */
-    box-shadow: 0 4px 20px rgba(50, 205, 190, 0.6);
-    /* compressed glow */
-}

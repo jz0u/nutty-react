@@ -1,36 +1,46 @@
 import "../../styles/SignUpBox.css"
+import Label from "../../components/Label"
 export default function SignUpBox() {
 
 
     return (
         <div id="SignUpBox">
             <form id="signup-form">
-
-                <label htmlFor="username" id="username-label" className="label">
-                    <h1>Username:</h1>
-                    <input type="text" id="username-textbox" name="username" className="input-field"></input>
-                </label>
-
-
-                <label htmlFor="email" id="email-label" className="label">
-                    <h1>Email:</h1>
-                    <input type="email" id="email-textbox" name="email" className="input-field"></input>
-                </label>
-
-                <label htmlFor="password1" id="password1-label" className="label">
-                    <h1>Password:</h1>
-                    <input type="password" id="password1-textbox" name="password1" className="input-field"></input>
-                </label>
-
-                <label htmlFor="password2" id="password2-label" className="label">
-                    <h1>Password:</h1>
-                    <input type="password" id="password2-textbox" name="password2" className="input-field"></input>
-                </label>
-
-
-
-                <button className="label"><h1>Sign Up!</h1></button>
-
+                <Label
+                    name={"username"}
+                    labelID={"username-label"}
+                    text={"Username:"}
+                    inputID={"username-textbox"}
+                    inputType={"text"}
+                />
+                <Label
+                    name={"email"}
+                    labelID={"email-label"}
+                    text={"Email:"}
+                    inputID={"email-textbox"}
+                    inputType={"email"}
+                />
+                <Label
+                    name={"password1"}
+                    labelID={"password1-label"}
+                    text={"Password:"}
+                    inputID={"password1-textbox"}
+                    inputType={"password"}
+                />
+                  <Label
+                    name={"password2"}
+                    labelID={"password2-label"}
+                    text={"Password:"}
+                    inputID={"password2-textbox"}
+                    inputType={"password"}
+                />
+                <Label
+                    name={"submit"}
+                    labelID={"submit-label"}
+                    text={"Sign Up!"}
+                    inputID={"submit-input"}
+                    inputType={"button"}                    
+                />
             </form>
 
         </div>
