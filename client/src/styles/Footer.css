@@ -4,4 +4,6 @@
     border-top: 1px solid rgba(0,0,0,0.06); 
     padding: 0px 25px;
     height: 60px;
+        min-height: 60px;
+
 }

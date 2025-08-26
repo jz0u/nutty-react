@@ -12,6 +12,7 @@
     position: relative;
     z-index: 10;
     padding: 0px 20px;
+    min-height: 60px;
 }
 #HeaderNav{
     display: flex;

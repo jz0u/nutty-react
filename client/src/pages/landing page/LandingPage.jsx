@@ -12,7 +12,7 @@ export default function LandingPage() {
     return (
         <main id="LandingPage">
             <Header />
-            <div id="HeroAndFeatureSectionController">
+            <div id="HeroAndFeatureSectionController" className="main-content">
                 <Hero
                     headline={headline}
                     subheading={subheading }

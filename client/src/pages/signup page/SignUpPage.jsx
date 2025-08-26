@@ -9,7 +9,6 @@ export default function SignUpPage() {
             <div id="SignUpPage-main">
                 <SignUpBox />
             </div>
-
             <Footer />
         </main>
 

@@ -10,12 +10,12 @@
 #HeroText {
   display: flex;
   flex-direction: column;
+  padding-left: 50px;
 }
 
 #headline {
   font-size: 3rem;
   margin: 0;
-  padding: 20px 20px 20px 175px;
   text-align:left;
   text-shadow: 0 2px 6px rgba(0,0,0,0.45);
 }
@@ -23,9 +23,9 @@
 #subtext {
   font-size: 2rem;
   margin: 0;
-  padding: 20px 20px 20px 500px;
-  text-align:left;
+  text-align:right;
   text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+
 
 }
 
@@ -33,6 +33,7 @@
 #HeroCTA{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 
 }
 #HeroButton {
