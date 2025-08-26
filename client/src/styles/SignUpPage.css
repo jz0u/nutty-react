@@ -1,23 +1,9 @@
-#username-label {
+#SignUpPage{
     display: flex;
-    background-color: burlywood;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: aqua;
 }
-
-#username-textbox {
-    text-align: center;
-    font-size: 180%;
-    font-weight: 600;
-    font-family: "Source Code Pro", monospace;
-    background-color: black;
-    color: cyan;
-    height: 20px;
-    width: 200px;
-    padding: 20px 10px;
-}
-
-#username-label>h1 {
-    color: black;
-
+#SignUpPage-main{
+    flex: 1;
 }
