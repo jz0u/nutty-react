@@ -12,7 +12,7 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/signin" element={<SignInPage/>} />
-        <Route path="/dashboard/:id" element={<DashboardPage/>} />   
+        <Route path="/dashboard" element={<DashboardPage/>} />   
       </Routes>
     </Router>
   )

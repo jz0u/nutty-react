@@ -10,7 +10,7 @@ export default function LandingPage() {
 
 
     return (
-        <main id="LandingPage">
+        <main id="LandingPage" className="Page">
             <Header />
             <div id="HeroAndFeatureSectionController" className="main-content">
                 <Hero

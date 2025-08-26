@@ -5,7 +5,7 @@ import "../../styles/SignInPage.css"
 export default function SignInPage() {
     return (
         
-        <main id="SignInPage">
+        <main id="SignInPage" className="Page">
             <Header/>
             <div id="SignInPage-main">
                 <SignInBox/>

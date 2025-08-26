@@ -4,7 +4,7 @@ import Footer from "../../components/Footer"
 import SignUpBox from "./SignUpBox"
 export default function SignUpPage() {
     return (
-        <main id="SignUpPage">
+        <main id="SignUpPage" className="Page">
             <Header />
             <div id="SignUpPage-main">
                 <SignUpBox />

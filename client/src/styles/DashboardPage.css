@@ -1,0 +1,23 @@
+#DashBoardPage{
+    
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+#dashboard-main{
+    display: flex;
+    background-color: burlywood;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+#logger-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:10px;
+    gap:10px;
+}
