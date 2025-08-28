@@ -41,12 +41,11 @@ app.get("/api/users", (req, res) => {
   return res.send(users)
 })
 
-app.get("/api/users/:id", (req, res) => {
-  const parsedId = parseInt(req.params.id)
-  if (isNaN(parsedId)) { return res.status(400).send({ msg: "Bad Request" }) }
-  const findUser = users.find((x) => (x.id === parsedId))
-  if (!findUser) { return res.status(404).send({ msg: "User Not Found" }) }
-  return res.status(200).json(findUser)
+app.get("/api/users/:id",resolveIndexByUserId, (req, res) => {
+  const {findUserIndex} = req
+  const findUser = users[findUserIndex]
+  if(!findUser){return res.sendStatus(404)}
+  res.status(200).send(findUser)
 })
 //post
 app.post("/api/users",(req,res)=>{
