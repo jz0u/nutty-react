@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 dotenv.config()
 import path from "path"
 import { fileURLToPath } from "url"
-import { query, validationResult, body } from "express-validator"
+import { query, validationResult, body, matchedData } from "express-validator"
 
 //db
 import users from "./users.js"
@@ -61,18 +61,22 @@ app.get("/api/users/:id", resolveIndexByUserId, (req, res) => {
 app.post(
   "/api/users",
   body("username")
-  .notEmpty().withMessage("Password must not be empty")
-  .isLength({min: 8,max: 20}).withMessage("Password must be at least 8 characters long")
-  .matches(/[A-Z]/).withMessage("Password must contain at least one uppercase letter")
-  .matches(/[a-z]/).withMessage("Password must contain at least one lowercase letter")
-  .matches(/[0-9]/).withMessage("Password must contain at least one number"),
-   (req, res) => {
-  const newId = users[users.length - 1].id + 1
-  const newUser = { id: newId, ...req.body }
-  users.push(newUser)
-  res.status(201).send(newUser)
+    .isString().withMessage("Username must be a string")
+    .notEmpty().withMessage("Username must not be empty")
+    .isLength({ min: 5, max: 32 }).withMessage("Username must be 5-32 charcaters long"),
+ 
+  (req, res) => {
+    const result = validationResult(req)
+    console.log("result", result)
+    if(!result.isEmpty()){ return res.status(400).send({errors:result.array()})}
+    const data = matchedData(req)
+    console.log("data:",data)
+    const newId = users[users.length - 1].id + 1
+    const newUser = { id: newId, ...data }
+    users.push(newUser)
+    res.status(201).send(newUser) 
 
-})
+  })
 //put
 app.put("/api/users/:id", resolveIndexByUserId, (req, res) => {
   const { body, findUserIndex } = req
