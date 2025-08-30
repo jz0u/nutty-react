@@ -23,4 +23,14 @@ const createUserQuery = {
     }
 }
 
-export {createUserBody,createUserQuery}
+const createFoodQuery = {
+   filter:{
+        isString: {errorMessage:"filter must be a string"},
+        notEmpty:{errorMessage: "filter must not be empty"},
+    },
+    value:{
+        notEmpty:{errorMessage:"value must not be empty"},
+    }
+}
+
+export {createUserBody,createUserQuery,createFoodQuery,}

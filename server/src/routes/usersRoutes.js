@@ -13,7 +13,6 @@ router.get(
     const result = validationResult(req)
     if (!result.isEmpty()) { return res.status(400).send({ errors: result.array() }) }
     const data = matchedData(req)
-    console.log(data)
     return res.send(users.filter((x)=>(x[data.filter].includes(data.value))))
 
   })
