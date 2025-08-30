@@ -1,4 +1,4 @@
-import users from "../users.js"
+import users from "../mockDB/usersDB.js"
 
 const resolveIndexByUserId = (req, res, next) => {
   const { params: { id } } = req

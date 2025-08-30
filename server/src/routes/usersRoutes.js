@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { checkSchema, validationResult, matchedData } from "express-validator";
 import { createUserQuery, createUserBody } from "../validationSchemas.js";
-import users from "../users.js"
+import users from "../mockDB/usersDB.js"
 import resolveIndexByUserId from "../middleware/resolveIndexByUserId.js";
 const router = Router();
 router.get(
