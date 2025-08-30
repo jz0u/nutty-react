@@ -1,25 +1,21 @@
-import express from "express"
 import dotenv from "dotenv"
 dotenv.config()
+import express from "express"
 import path from "path"
 import { fileURLToPath } from "url"
-import usersRouter from "./routes/users.js"
+import routes from "../src/routes/controller.js"
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const __dirname = path.dirname((fileURLToPath(import.meta.url)))
 const WEBAPP = path.join(__dirname, "../../client/dist")
 
 const app = express()
-app.use(express.json())
 const PORT = process.env.PORT || 3000
-app.use(express.json())
-app.use(express.static(WEBAPP))
 
-//middleware
+app.use(express.static(WEBAPP))
+app.use(express.json())
 
 //routes
-app.use(usersRouter)
-
+app.use(routes)
 //healthcheck
 app.get("/api", (req, res) => {
   res.sendStatus(200)

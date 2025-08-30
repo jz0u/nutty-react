@@ -5,17 +5,20 @@ import users from "../users.js"
 import resolveIndexByUserId from "../middleware/resolveIndexByUserId.js";
 const router = Router();
 router.get(
-  "/api/users",
+  "/",
   checkSchema(createUserQuery),
   (req, res) => {
     const { query: { filter, value } } = req
-    if (filter && value) {
-      return res.send(users.filter((x) => x[filter].includes(value)))
-    }
-    return res.send(users)
+    if(!filter && !value){return res.send(users)}
+    const result = validationResult(req)
+    if (!result.isEmpty()) { return res.status(400).send({ errors: result.array() }) }
+    const data = matchedData(req)
+    console.log(data)
+    return res.send(users.filter((x)=>(x[data.filter].includes(data.value))))
+
   })
 router.post(
-  "/api/users",
+  "/",
   checkSchema(createUserBody),
   (req, res) => {
     const result = validationResult(req)
@@ -29,7 +32,7 @@ router.post(
   })
 
 
-router.get("/api/users/:id", resolveIndexByUserId, (req, res) => {
+router.get("/:id", resolveIndexByUserId, (req, res) => {
   const { findUserIndex } = req
   const findUser = users[findUserIndex]
   if (!findUser) { return res.sendStatus(404) }
@@ -37,19 +40,19 @@ router.get("/api/users/:id", resolveIndexByUserId, (req, res) => {
 })
 
 //put
-router.put("/api/users/:id", resolveIndexByUserId, (req, res) => {
+router.put("/:id", resolveIndexByUserId, (req, res) => {
   const { body, findUserIndex } = req
   users[findUserIndex] = { id: users[findUserIndex].id, ...body }
   res.sendStatus(200)
 })
 //patch
-router.patch("/api/users/:id", resolveIndexByUserId, (req, res) => {
+router.patch("/:id", resolveIndexByUserId, (req, res) => {
   const { body, findUserIndex } = req
   users[findUserIndex] = { ...users[findUserIndex], ...body }
   res.sendStatus(200)
 })
 //delete
-router.delete("/api/users/:id", resolveIndexByUserId, (req, res) => {
+router.delete("/:id", resolveIndexByUserId, (req, res) => {
   users.splice(req.findUserIndex, 1)
   res.sendStatus(200)
 })
