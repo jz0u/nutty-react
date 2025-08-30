@@ -16,10 +16,7 @@ app.use(express.json())
 
 //routes
 app.use(routes)
-//healthcheck
-app.get("/api", (req, res) => {
-  res.sendStatus(200)
-})
+
 //SPA catch all goes last
 app.get(/.*/, (req, res) => {
   res.sendFile(path.join(WEBAPP, "index.html"))
