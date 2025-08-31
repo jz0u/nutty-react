@@ -1,5 +1,10 @@
 const cookieMiddleWare = (req,res,next) => {
-    res.cookie("hello", "world", {maxAge: 60000})
+    res.cookie(
+      "hello",
+       "world",
+       {
+        maxAge: 10000,
+      })
   next()
 }
 
