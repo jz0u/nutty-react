@@ -8,6 +8,7 @@ import routes from "../src/routes/controller.js"
 import cookieMiddleWare from "./middleware/cookieMiddleware.js"
 const __dirname = path.dirname((fileURLToPath(import.meta.url)))
 const WEBAPP = path.join(__dirname, "../../client/dist")
+import session from "express-session"
 
 const app = express()
 const PORT = process.env.PORT || 3000
