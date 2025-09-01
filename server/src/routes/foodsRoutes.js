@@ -19,8 +19,12 @@ router.get(
 router.post(
     "/",
     (req, res) => {
-        if(req.cookies.hello && req.cookies.hello === "world"){return res.sendStatus(200)}
-        res.status(403).send({msg: "you need the correct cookies"})
-    })
+        if(!req.session.user){return res.status(401).send({msg: "not logged in"})}
+        const {body: log} = req
+        const newId = parseInt(foods[foods.length-1].id + 1)
+        const data = {id:newId, ...log}
+        foods.push(data)
+        res.sendStatus(200)
+    }) 
 
 export default router

@@ -4,6 +4,7 @@ const cookieMiddleWare = (req,res,next) => {
        "world",
        {
         maxAge: 10000,
+        signed: true,
       })
   next()
 }
