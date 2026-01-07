@@ -1,0 +1,71 @@
+#FeatureSectionController {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0px 80px 64px 32px;
+}
+
+#FeatureDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C68E58;
+    border-radius: 22px;
+    margin-left: auto;
+    box-shadow: 0 0 25px 5px rgba(228, 158, 57, .7);
+    border-bottom: 1px solid rgba(0,0,0,0.06); 
+    gap:10px;
+    padding: 10px;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+   
+    
+}
+
+#FeatureDisplayHeader{
+    background-color: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+#FeatureDisplayFooter{
+    background-color: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+
+}
+#FeatureDisplayContentBox{
+    background-color: #fffaf0;
+    margin: 0px -10px;
+}
+
+.FeatureComponent-on{
+    display: flex;
+    flex-direction: column;
+}
+
+.FeatureComponent-off{
+    display: none;
+}
+
+#feature-name{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+}
+#feature-description{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 0px 25px;
+}
+#feature-image{
+    background-color: inherit;
+
+}

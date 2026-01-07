@@ -1,0 +1,29 @@
+#SignUpBox {
+    background-image: url("../assets/pbTable.png");
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex: 1;
+}
+
+
+
+#signup-form {
+    background-color: #f7dcba;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: fit-content;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 5px rgba(146, 144, 143, 0.4);
+    justify-content: center;
+
+}
+

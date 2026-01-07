@@ -1,0 +1,22 @@
+export default [
+  { id: 1,  name: "apple",        amount: "100 g" },
+  { id: 2,  name: "banana",       amount: "1 pc" },
+  { id: 3,  name: "orange",       amount: "2 pcs" },
+  { id: 4,  name: "strawberries", amount: "250 g" },
+  { id: 5,  name: "blueberries",  amount: "150 g" },
+  { id: 6,  name: "spinach",      amount: "200 g" },
+  { id: 7,  name: "broccoli",     amount: "300 g" },
+  { id: 8,  name: "carrot",       amount: "2 pcs" },
+  { id: 9,  name: "tomato",       amount: "3 pcs" },
+  { id: 10, name: "cucumber",     amount: "1 pc" },
+  { id: 11, name: "avocado",      amount: "1 pc" },
+  { id: 12, name: "potato",       amount: "500 g" },
+  { id: 13, name: "onion",        amount: "2 pcs" },
+  { id: 14, name: "garlic",       amount: "3 cloves" },
+  { id: 15, name: "milk",         amount: "1 L" },
+  { id: 16, name: "yogurt",       amount: "200 g" },
+  { id: 17, name: "eggs",         amount: "12 pcs" },
+  { id: 18, name: "chicken",      amount: "500 g" },
+  { id: 19, name: "rice",         amount: "1 kg" },
+  { id: 20, name: "pasta",        amount: "500 g" }
+];
